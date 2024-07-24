@@ -1,0 +1,14 @@
+https://github.com/vanbumi/Cara-Install-Tailwindcss
+
+1. npx tailwindcss init -y
+2. npm init -y
+3. npm install tailwindcss@latest postcss@latest autoprefixer@latest
+4. mkdir css
+5. css/style.css
+6. Tambahkan sintax tailwind di file style.css
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+7. Tambahkan baris code ini pada file package.json
+"build:css": "tailwindcss build src/style.css -o dist/style.css",
+"test": "echo \"Error: no test specified\" && exit 1"
